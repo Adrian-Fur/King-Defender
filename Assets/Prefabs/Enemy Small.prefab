@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3005572468979808812}
   - component: {fileID: 1031613990518443750}
   - component: {fileID: 731631588411320813}
+  - component: {fileID: 8085879428590447583}
   m_Layer: 0
   m_Name: Enemy Small
   m_TagString: Untagged
@@ -104,4 +105,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  waitTime: 1
+  speed: 1
+--- !u!65 &8085879428590447583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536284948355575603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.918542, y: 3.2643611, z: 4.9999995}
+  m_Center: {x: -0.040728927, y: 1.6321806, z: 0}
