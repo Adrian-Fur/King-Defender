@@ -6,11 +6,11 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int maxHitPoints = 5;
-    int currnetHitPoint = 0;
+    [SerializeField] int currentHitPoint = 0;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        currnetHitPoint = maxHitPoints;
+        currentHitPoint = maxHitPoints;
     }
 
     private void OnParticleCollision(GameObject other)
@@ -20,10 +20,11 @@ public class EnemyHealth : MonoBehaviour
 
     private void ProcessHit()
     {
-        currnetHitPoint--;
-        if(currnetHitPoint <= 0)
+        currentHitPoint--;
+
+        if(currentHitPoint <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
