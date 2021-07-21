@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 199200659766885446}
   - component: {fileID: 199200659766885448}
   - component: {fileID: 199200659766885451}
+  - component: {fileID: -5190765236671735266}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -54,7 +55,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  speed: 1
+  speed: 0.5
 --- !u!114 &199200659766885448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498240a5bf1a9ed4c8c84b9490aee2a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 5
-  currentHitPoint: 0
+  maxHitPoints: 3
+  difficultyRamp: 5
 --- !u!65 &199200659766885451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -82,6 +83,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.364389, y: 6.7202, z: 9.744046}
   m_Center: {x: 0.058052063, y: 1.9213712, z: 0.1522193}
+--- !u!114 &-5190765236671735266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199200659766885447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537229642426f24499ace408bde442a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldReward: 25
+  goldPenalty: 25
 --- !u!1001 &8838266343602071247
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3056559719230871365}
   - component: {fileID: -3956762807881643612}
+  - component: {fileID: -3886972110318233990}
   m_Layer: 0
   m_Name: Player Small
   m_TagString: Untagged
@@ -45,6 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 5531252689965901129}
+  projectilesParticles: {fileID: 5941721618635475665}
+  towerRange: 15
+--- !u!114 &-3886972110318233990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2982427231046768986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f4fd72414eb29428093535f86d0504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1166140986154087175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,5 +145,10 @@ Transform:
 --- !u!4 &5531252689965901129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6695728981018908238, guid: 5ae7d3941f578534c90d90e75bdd2938, type: 3}
+  m_PrefabInstance: {fileID: 1166140986154087175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5941721618635475665 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4781639010428271062, guid: 5ae7d3941f578534c90d90e75bdd2938, type: 3}
   m_PrefabInstance: {fileID: 1166140986154087175}
   m_PrefabAsset: {fileID: 0}
