@@ -37,9 +37,13 @@ public class Waypoint : MonoBehaviour
     {
         if (gridManager.GetNode(coordinates).isWalkable && !pathFinding.WillBlockPath(coordinates))
         {
-            bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
-            isPlaceable = !isPlaced;
-            gridManager.BlockNode(coordinates);
+            bool isSuccessful = towerPrefab.CreateTower(towerPrefab, transform.position);
+            if (isSuccessful)
+            {
+                gridManager.BlockNode(coordinates);
+                pathFinding.NotifyReceivers();
+            }
+            
         }    
     }
 }
